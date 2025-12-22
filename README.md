@@ -39,11 +39,27 @@ In this level, relative references are used to move HEAD to a parent commit inst
 # Level-2 [Relative Refs #2(~)]
 Relative Refs (~) are used to move back multiple commits from HEAD, for example HEAD~2 moves two commits back.
 <img width="1918" height="806" alt="Screenshot 2025-12-22 194350" src="https://github.com/user-attachments/assets/2088e59c-c5f4-47f1-b307-8ef59a07992e" />
-
 Commands to be Executed:
 1. ```git branch -f main C6
 2. git branch -f bugFix HEAD~2
 3. git checkout C1```
+# Level-2 [Reversing Changes in Git]
+Reversing changes in Git means undoing commits or file changes to return your project to an earlier, correct state using commands like git restore, git reset, or git revert.
+<img width="1919" height="795" alt="Screenshot 2025-12-22 194755" src="https://github.com/user-attachments/assets/005bc443-0b73-4c8a-af35-1c9232daa9ac" />
+Commands to be Executed:
+1. ```git branch -f loacl C1
+2. git checkout pushed
+3. git revert pushed```
+
+# Level-3 [Moving Work Around]
+Moving Work Around in Git means rearranging commits between branches using commands like cherry-pick or rebase to place your work where it belongs.
+<img width="1919" height="799" alt="Screenshot 2025-12-22 195257" src="https://github.com/user-attachments/assets/695b37f8-a515-4f08-aec8-fb433b1e5a06" />
+n this level, moving work around is done using git cherry-pick. Cherry-pick allows you to copy specific commits from different branches and apply them to the current branch. Here, the command '''git cherry-pick C3 C4 C7 '''takes the changes from commits C3, C4, and C7 and applies them one by one onto the main branch. This is useful when you want only selected changes, not the entire branch history.
+# Level-3 [Git Interactive Rebase]
+A Git feature that allows you to edit, reorder, combine, or remove commits in a branch’s history, enabling a cleaner and more organized commit structure before merging.
+
+
+
 
 
 
