@@ -21,12 +21,12 @@ Commands to be Execute:
 Git rebase moves your branch commits onto another branch to make the history clean and straight.
 <img width="1919" height="797" alt="Screenshot 2025-12-22 151204" src="https://github.com/user-attachments/assets/cd393807-dfaf-4354-a198-1bfdca634459" />
 Commands to be Executed:
-1.git checkout -b bugFix
-2.git commit
-3.git checkout main
-4.git commit
-5.git checkout bugFix
-git rebase main
+1. git checkout -b bugFix
+2. git commit
+3. git checkout main
+4. git commit
+5. git checkout bugFix
+6. git rebase main
 
 
 
