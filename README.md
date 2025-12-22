@@ -21,12 +21,31 @@ Commands to be Execute:
 Git rebase moves your branch commits onto another branch to make the history clean and straight.
 <img width="1919" height="797" alt="Screenshot 2025-12-22 151204" src="https://github.com/user-attachments/assets/cd393807-dfaf-4354-a198-1bfdca634459" />
 Commands to be Executed:
-1. git checkout -b bugFix
+1. ```git checkout -b bugFix
 2. git commit
 3. git checkout main
 4. git commit
 5. git checkout bugFix
-6. git rebase main
+6. git rebase main```
+# Level-2 [Moving around in git]
+Moving around in Git means navigating between commits and branches to see or work on different versions of your code using commands like checkout and switch in Git.
+<img width="1919" height="799" alt="Screenshot 2025-12-22 192457" src="https://github.com/user-attachments/assets/7bc2adf2-4b38-4688-872c-653219b20059" />
+In this level, HEAD is detached by using git checkout C4. Usually, HEAD points to a branch like main or bugFix. When you checkout a commit directly, HEAD moves to that commit and is not linked to any branch. The branches stay where they are, and you just view an older version of the project without changing branch history.Command '''git checkout C4'''.
+
+# Level-2 [Relative Refs]
+Relative refs in Git let you move to commits based on their position from HEAD, instead of using full commit IDs, like HEAD~1 (one commit before HEAD) or HEAD^ (parent commit).
+<img width="1919" height="797" alt="Screenshot 2025-12-22 193037" src="https://github.com/user-attachments/assets/a8418f12-8d32-42d6-910e-82e5aa5908a0" />
+In this level, relative references are used to move HEAD to a parent commit instead of typing the full commit ID. The caret symbol ^ means “go to the parent commit.” When you use a command like git checkout C3 (or HEAD^), HEAD moves one step up in the commit history. This makes it easy to navigate to earlier commits quickly and safely without changing any branch positions.Command'''git checkout C3'''.
+# Level-2 [Relative Refs #2(~)]
+In Git, the tilde (~) operator is used to move multiple commits back from HEAD. For example, HEAD~1 means one commit before HEAD, and HEAD~2 means two commits before HEAD. It is a shortcut that helps you go back several commits easily without writing many caret (^) symbols.
+<img width="1919" height="797" alt="Screenshot 2025-12-22 193037" src="https://github.com/user-attachments/assets/c85c51c1-7dca-4963-b628-3d24416e7c90" />
+The tilde (~) is used to go back multiple commits from HEAD.
+For example, HEAD~1 goes back one commit and HEAD~2 goes back two commits, making navigation easier.
+Commands to be Executed:
+1. ```git branch -f main C6
+2. git branch -f bugFix HEAD~2
+3. git checkout C1```
+
 
 
 
