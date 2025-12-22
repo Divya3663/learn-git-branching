@@ -36,7 +36,7 @@ In this level, HEAD is detached by using git checkout C4. Usually, HEAD points t
 Relative refs in Git let you move to commits based on their position from HEAD, instead of using full commit IDs, like HEAD~1 (one commit before HEAD) or HEAD^ (parent commit).
 <img width="1919" height="797" alt="Screenshot 2025-12-22 193037" src="https://github.com/user-attachments/assets/a8418f12-8d32-42d6-910e-82e5aa5908a0" />
 In this level, relative references are used to move HEAD to a parent commit instead of typing the full commit ID. The caret symbol ^ means “go to the parent commit.” When you use a command like git checkout C3 (or HEAD^), HEAD moves one step up in the commit history. This makes it easy to navigate to earlier commits quickly and safely without changing any branch positions.Command'''git checkout C3'''.
-# Level-2 [Relative Refs #2(~)]
+# Level-2 [Relative Refs 2(~)]
 Relative Refs (~) are used to move back multiple commits from HEAD, for example HEAD~2 moves two commits back.
 <img width="1918" height="806" alt="Screenshot 2025-12-22 194350" src="https://github.com/user-attachments/assets/2088e59c-c5f4-47f1-b307-8ef59a07992e" />
 Commands to be Executed:
