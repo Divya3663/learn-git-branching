@@ -12,11 +12,11 @@ This step shows creating a new branch called bugFix and switching to it, so now 
 Branches let you work on new features or fixes separately from the main code, and merging means combining those changes back into the main branch once the work is complete.
 <img width="1916" height="804" alt="Screenshot 2025-12-22 150631" src="https://github.com/user-attachments/assets/fe4acb2f-3f63-4c53-80fa-539a75a22695" />
 Commands to be Execute:
-1.git checkout -b bugFix
-2.git commit
-3.git checkout main
-4.git commit
-5.git merge bugfix
+1. git checkout -b bugFix
+2. git commit
+3. git checkout main
+4. git commit
+5. git merge bugfix
 # Level-1 [Git Rebase]
 Git rebase moves your branch commits onto another branch to make the history clean and straight.
 <img width="1919" height="797" alt="Screenshot 2025-12-22 151204" src="https://github.com/user-attachments/assets/cd393807-dfaf-4354-a198-1bfdca634459" />
