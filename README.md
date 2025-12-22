@@ -37,10 +37,9 @@ Relative refs in Git let you move to commits based on their position from HEAD, 
 <img width="1919" height="797" alt="Screenshot 2025-12-22 193037" src="https://github.com/user-attachments/assets/a8418f12-8d32-42d6-910e-82e5aa5908a0" />
 In this level, relative references are used to move HEAD to a parent commit instead of typing the full commit ID. The caret symbol ^ means “go to the parent commit.” When you use a command like git checkout C3 (or HEAD^), HEAD moves one step up in the commit history. This makes it easy to navigate to earlier commits quickly and safely without changing any branch positions.Command'''git checkout C3'''.
 # Level-2 [Relative Refs #2(~)]
-In Git, the tilde (~) operator is used to move multiple commits back from HEAD. For example, HEAD~1 means one commit before HEAD, and HEAD~2 means two commits before HEAD. It is a shortcut that helps you go back several commits easily without writing many caret (^) symbols.
-<img width="1919" height="797" alt="Screenshot 2025-12-22 193037" src="https://github.com/user-attachments/assets/c85c51c1-7dca-4963-b628-3d24416e7c90" />
-The tilde (~) is used to go back multiple commits from HEAD.
-For example, HEAD~1 goes back one commit and HEAD~2 goes back two commits, making navigation easier.
+Relative Refs (~) are used to move back multiple commits from HEAD, for example HEAD~2 moves two commits back.
+<img width="1918" height="806" alt="Screenshot 2025-12-22 194350" src="https://github.com/user-attachments/assets/2088e59c-c5f4-47f1-b307-8ef59a07992e" />
+
 Commands to be Executed:
 1. ```git branch -f main C6
 2. git branch -f bugFix HEAD~2
