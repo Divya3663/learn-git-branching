@@ -57,7 +57,13 @@ Moving Work Around in Git means rearranging commits between branches using comma
 n this level, moving work around is done using git cherry-pick. Cherry-pick allows you to copy specific commits from different branches and apply them to the current branch. Here, the command '''git cherry-pick C3 C4 C7 '''takes the changes from commits C3, C4, and C7 and applies them one by one onto the main branch. This is useful when you want only selected changes, not the entire branch history.
 # Level-3 [Git Interactive Rebase]
 A Git feature that allows you to edit, reorder, combine, or remove commits in a branch’s history, enabling a cleaner and more organized commit structure before merging.
-
+<img width="1919" height="800" alt="Screenshot 2025-12-22 203125" src="https://github.com/user-attachments/assets/9ed0fc31-7d1f-4f22-a872-2f0d3153b1ad" />
+Commands to be Executed:
+1. ```git rebase -i HEAD~4
+2. git branch -f main C5
+3. git rebase -i HEAD~4
+4. git branch -f overHere C5'
+5. git rebase overHere```
 
 
 
