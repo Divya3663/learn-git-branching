@@ -65,6 +65,10 @@ Commands to be Executed:
 4. git branch -f overHere C5'
 5. git rebase overHere```
 
+# Level-4 [Locally stacked commits]
+Locally stacked commits means you have created multiple commits one after another on your local branch, and these commits exist only on your local machine because they have not been pushed to a remote repository yet.
+
+
 
 
 
