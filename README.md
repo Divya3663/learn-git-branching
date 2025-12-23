@@ -51,8 +51,8 @@ Relative Refs (~) are used to move back multiple commits from HEAD, for example 
 Commands to be Executed:
  ```
 git branch -f main C6
- git branch -f bugFix HEAD~2
- git checkout C1
+git branch -f bugFix HEAD~2
+git checkout C1
 ```
 # Level-4 [Reversing Changes in Git]
 Reversing changes in Git means undoing commits or file changes to return your project to an earlier, correct state using commands like git restore, git reset, or git revert.
