@@ -111,7 +111,19 @@ git branch -f main C1
 git cherry-pick C2
 git cherry-pick C3
 ```
-
+# Level-4 [Git Tags]
+Git tags are named references used to mark specific commits in a repository, usually to indicate important points such as releases, versions, or milestones.
+<img width="1916" height="794" alt="Screenshot 2025-12-23 225130" src="https://github.com/user-attachments/assets/67044948-b0be-4baa-93fe-3998f0d1da7a" />
+Commands to be Executed:
+```
+git tag v0 c1
+git checkout c2
+git tag v1 c2
+```
+# Level-4 [Git Describe]
+git describe is a Git command used to generate a human-readable name for the current commit based on the nearest reachable tag, the number of commits since that tag, and the commit hash.
+<img width="1917" height="794" alt="Screenshot 2025-12-23 225922" src="https://github.com/user-attachments/assets/a73765a0-0ae0-4e87-92df-ba15b6c107f1" />
+``` git commit ```
 
 
 
