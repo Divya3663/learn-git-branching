@@ -15,24 +15,24 @@ This step shows creating a new branch called bugFix and switching to it, so now 
 Branches let you work on new features or fixes separately from the main code, and merging means combining those changes back into the main branch once the work is complete.
 <img width="1916" height="804" alt="Screenshot 2025-12-22 150631" src="https://github.com/user-attachments/assets/fe4acb2f-3f63-4c53-80fa-539a75a22695" />
 Commands to be Execute:
-  ```
+```
 git checkout -b bugFix
- git commit
- git checkout main
- git commit
- git merge bugfix
+git commit
+git checkout main
+git commit
+git merge bugfix
 ```
 # Level-4 [Git Rebase]
 Git rebase moves your branch commits onto another branch to make the history clean and straight.
 <img width="1919" height="797" alt="Screenshot 2025-12-22 151204" src="https://github.com/user-attachments/assets/cd393807-dfaf-4354-a198-1bfdca634459" />
 Commands to be Executed:
- ```
+```
 git checkout -b bugFix
- git commit
- git checkout main
- git commit
- git checkout bugFix
- git rebase main
+git commit
+git checkout main
+git commit
+git checkout bugFix
+git rebase main
 ```
 # Phase-2
 
@@ -60,8 +60,8 @@ Reversing changes in Git means undoing commits or file changes to return your pr
 Commands to be Executed:
 ```
 git branch -f loacl C1
- git checkout pushed
- git revert pushed
+git checkout pushed
+git revert pushed
 ```
 # phase-3
 
@@ -75,10 +75,10 @@ A Git feature that allows you to edit, reorder, combine, or remove commits in a 
 Commands to be Executed:
  ```
 git rebase -i HEAD~4
- git branch -f main C5
- git rebase -i HEAD~4
- git branch -f overHere C5'
- git rebase overHere
+git branch -f main C5
+git rebase -i HEAD~4
+git branch -f overHere C5'
+git rebase overHere
 ```
 # Phase-4
 
