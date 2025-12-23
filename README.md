@@ -84,6 +84,22 @@ git rebase -i HEAD~3
 git checkout main
 git branch -f main C4'
 ```
+# Level-4 [Juggling Commits]
+Juggling Commits (in Git) means rearranging, moving, or fixing commits to get a clean and correct history. It’s like picking up commits and placing them where they belong.
+<img width="1919" height="812" alt="Screenshot 2025-12-23 114226" src="https://github.com/user-attachments/assets/36c18a56-306c-498d-9cb0-84b666be14ee" />
+Commands to be Executed:
+```
+git rebase -i HEAD~2
+git checkout newImage
+git rebase caption
+git branch -f newImage C2
+git rebase caption
+git branch -f caption C3
+git checkout caption
+git rebase -i HEAD~2
+git checkout main
+git branch -f main C3''
+```
 
 
 
