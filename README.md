@@ -102,6 +102,15 @@ git branch -f main C3''
 ```
 # Level-4 [Juggling Commits #2]
 Juggling Commits #2 is a Git concept that focuses on selectively moving, reordering, or applying individual commits between branches using commands like git rebase -i and git cherry-pick, without merging entire branch histories.
+<img width="1919" height="798" alt="Screenshot 2025-12-23 224336" src="https://github.com/user-attachments/assets/bd1c097f-fbfb-402b-83c7-64b9f755a8f5" />
+```
+git checkout newImage
+git checkout main
+git cherry-pick C2
+git branch -f main C1
+git cherry-pick C2
+git cherry-pick C3
+```
 
 
 
